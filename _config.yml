@@ -12,7 +12,7 @@ title                    : "Alisa Rupenyan / Alisa Rupenyan Academic website"
 title_separator          : "-"
 name                     : &name "Alisa Rupenyan"
 description              : &description "personal description"
-url                      : https://academicpages.github.io # the base hostname & protocol for your site e.g. "https://alisa-rupenyan.github.io"
+url                      : "https://alisa-rupenyan.github.io" 
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
 
