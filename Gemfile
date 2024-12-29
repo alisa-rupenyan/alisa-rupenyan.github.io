@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+gem "minimal-mistakes-jekyll"
+
 group :jekyll_plugins do
   gem 'jekyll'
   gem 'jekyll-feed'
@@ -10,3 +12,5 @@ group :jekyll_plugins do
 end
 
 gem 'github-pages'
+gem "csv"
+gem "base64"  
