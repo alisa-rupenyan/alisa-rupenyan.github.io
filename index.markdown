@@ -1,9 +1,8 @@
 ---
 layout: home
-title: "Welcome"
+title: "Intelligent manufacturing systems via optimization and AI-based approaches"
 permalink: /
 ---
 
-# Welcome to My Site
 
-This is the research page of Alisa Rupenyan.
+
