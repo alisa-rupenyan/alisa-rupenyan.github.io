@@ -14,7 +14,7 @@ name                     : &name "Alisa Rupenyan"
 description              : &description "Research website"
 url                      : "https://alisa-rupenyan.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
-theme                    : minimal-mistakes-jekyll
+theme                    : "minimal-mistakes-jekyll"
 repository               : "alisa-rupenyan/alisa-rupenyan.github.io"
 
 # Site Author - The following control what appear as part of the author content on the side bar.
