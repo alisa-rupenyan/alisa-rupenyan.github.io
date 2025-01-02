@@ -11,35 +11,30 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Physics, Vrije Universiteit Amsterdam, 2009
+* M.S. in Laser Physics and Optics, Sofia University, 2005
+* B.S. in Engineering Physics, Sofia University, 2003
 
 Work experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * Github University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* September 2023: Rieter Endowed Professor for Industrial AI
+  * ZHAW University, Center for AI
+ 
 
-* Fall 2015: Research Assistant
-  * Github University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
+* February 2018 - August 2023: Group Leader, Advanced Control and Automation
+  * Inspire AG (Research institute for technology transfer strongly linked to ETH Zurich)
 
-* Summer 2015: Research Assistant
-  * Github University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* August 2021 - August 2023: Senior Scientist
+  * Automatic Control Laboratory, ETH Zurich
+
+* January 2014 - August 2017: Head of Application Development
+  * Qualysense AG, Zurich  
+
+* March 2011 - September 2013: Postdoctoral fellow (ETH fellow on individual granf)
+  * Laboraotry for Ultrafast Spectroscopy and Attosecond Science, ETH Zurich  
+
+* January 2010 - January 2011: Postdoctoral researcher
+  * Van't Hoff Institute for Molecular Science, University of Amsterdam
 
 Publications
 ======
@@ -61,4 +56,6 @@ Teaching
   
 Service and leadership
 ======
-* Currently signed in to 43 different slack teams
+* Associate editor for Control Engineering Practice (a journal of IFAC, the International Federation of Automatic Control)
+
+* Executive member of the IFAC Industry Committee
