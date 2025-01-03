@@ -1,7 +1,7 @@
 ---
 title: "Autonomy - adaptation"
-excerpt: "Methods for adaptive tuning of control or process parameters<br/><img src='/images/500x300.png'>"
+excerpt: "Methods for adaptive tuning of control or process parameters<br/>"
 collection: research
 ---
 
-This is an item in your portfolio. It can be have images or nice text. If you name the file .md, it will be parsed as markdown. If you name the file .html, it will be parsed as HTML. 
+We develop methods for optimization and control when the systems are subject to drifts, or to time-varying disturbances. We use iterative optimization-based methods, such as Bayesian optimization, Iterative Learning Control, MPC, and reinforcement leanring.

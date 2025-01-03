@@ -8,13 +8,5 @@ date: 2024-02-20
 location: "Winterthur, Switzerland"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+This is an introductory course in Machine Learning. The lecture notes can be found [here](https://phonosync.github.io/mldm-notes/).
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======

@@ -9,6 +9,8 @@ redirect_from:
 
 {% include base_path %}
 
+<embed src="{{ site.baseurl }}/files/CV_AR.pdf" width="600" height="700" type='application/pdf'>
+
 Education
 ======
 * Ph.D in Physics, Vrije Universiteit Amsterdam, 2009

@@ -1,0 +1,8 @@
+---
+layout: post
+title:  "Bridge Discovery Grant Accepted!"
+date:   2025-01-02 
+categories: Grants
+---
+
+Our collaborative grant focused on robotic 3D-printing has been accepted and jointly funded by the Swiss National Science Foundation (SNSF) and the Swiss Innovation Agency (Innosuisse). It is a 4-year project for 2 MCHF, and a collaboration with Efe C. Balta at inspire AG and with John Lygeros at the Automatic Control Lab at ETH Zurich.

@@ -8,13 +8,5 @@ date: 2014-01-01
 location: "Zurich, Switzerland"
 ---
 
-This is a description of a teaching experience. You can use markdown like any other post.
+This is an introductory course on the basics of Artificial Intelligence, with a strong focus on applications. It covers topics from deep learning and from planning and search.
 
-Heading 1
-======
-
-Heading 2
-======
-
-Heading 3
-======
