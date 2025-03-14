@@ -17,10 +17,12 @@ main:
   - title: "Research"
     url: /research/
         
-  - title: "Blog Posts"
+  - title: "News"
     url: /year-archive/
     
   - title: "CV"
     url: /cv/
-    
+  
+  - title: "Research Group"
+    url: /research_group/  
  

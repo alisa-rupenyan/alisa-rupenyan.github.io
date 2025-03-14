@@ -8,9 +8,9 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Alisa Rupenyan "
+title                    : "Industrial AI "
 title_separator          : "-"
-name                     : &name "Alisa Rupenyan"
+name                     : &name "Industrial AI"
 description              : &description "Academic website, Alisa Rupenyan, industrial AI for autonomous manufacturing systems, Industrial AI group at ZHAW"
 url                      : "https://alisa-rupenyan.github.io" # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -132,7 +132,7 @@ yandex_site_verification :
 
 # Social Sharing
 twitter:
-  username               : &twitter
+  username               : 
 facebook:
   username               :
   app_id                 :
@@ -226,11 +226,14 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
+  research_group:
+    output: true
+    permalink: /:collection/:path/  
 
 
 # These settings control how pages and collections are included in the site
 defaults:
-  # _posts
+  # _news
   - scope:
       path: ""
       type: posts
@@ -256,7 +259,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _publications
   - scope:
       path: ""
@@ -265,7 +268,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comments: true
+      comments: false
   # _research
   - scope:
       path: ""
@@ -274,7 +277,7 @@ defaults:
       layout: single
       author_profile: true
       share: true
-      comment: true
+      comment: false
   # _talks
   - scope:
       path: ""
@@ -283,6 +286,15 @@ defaults:
       layout: talk
       author_profile: true
       share: true
+  # _research_group
+  - scope:
+      path: ""
+      type: research_group
+    values:
+      layout: single
+      author_profile: true
+      share: true
+      comments: false   
 
 
 # Sass/SCSS
