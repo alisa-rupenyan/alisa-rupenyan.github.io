@@ -1,7 +1,10 @@
 ---
-title: "Autonomy - adaptation"
-excerpt: "Methods for adaptive tuning of control or process parameters<br/>"
+title: "Autonomy - optimization"
+excerpt: "Methods for data-driven optimization of control or process parameters<br/>"
 collection: research
 ---
 
 We develop methods for optimization and control when the systems are subject to drifts, or to time-varying disturbances. We use iterative optimization-based methods, such as Bayesian optimization, Iterative Learning Control, MPC, and reinforcement leanring.
+
+<p>Our algorithms learn to optimize unknown functions in real-time while guaranteeing safety under uncertainty. Our work includes the RaGoOSE algorithm for safe controller tuning in the presence of heteroscedastic noise, where we combine safe learning with risk-averse Bayesian optimization.The algorithm was demonstrated on precision-motion systems in semiconductor industry applications (König et al., "Safe Risk-averse Bayesian Optimization for Controller Tuning," IEEE Robotics and Automation Letters, 2023). We brought the approach for safe data-driven optimization further with the TVSafeOpt algorithm , which addresses time-varying optimization problems. Our learner tracks changing safe regions using spatio-temporal kernels for Gaussian processes. The method was validated on a simulation of gas compressor systems (Li et al., "Safe Time-Varying Optimization based on Gaussian Processes with Spatio-Temporal Kernel," NeurIPS 2024). 
+To address the variability in industrial scenarios, building on meta-learning principles, we developed  in collaboration data-driven approaches for choosing safety-compliant priors in Bayesian optimization using the F-PACOH algorithm, accelerating convergence while maintaining safety guarantees (Rothfuss et al., "Meta-Learning Priors for Safe Bayesian Optimization," Conference on Robot Learning, PMLR, 2022). Our recent work on adaptive real-time Bayesian optimization introduces computational optimizations and parallelization techniques that enable real-time parameter tuning for high-precision motion systems, bridging the gap between theoretically sound optimization and practical industrial implementation (König et al., "Adaptive Bayesian Optimization for High-Precision Motion Systems," IEEE Trans. on Automation, Science, and Engineering, 2025 (presentation on IROS 2025)).</p>
