@@ -29,7 +29,7 @@ A digital twin that accurately represents the wire-robot interaction
 allows us to get better insights into this process and perform a more rapid adaptation to new
 products and tasks. For this, we are exploring several platforms, from available physics-based engines to professional solutions like Siemens Amesim.
 
-
+Project partners: [ZHAW IMPE](https://www.zhaw.ch/en/engineering/institutes-centres/impe), [NCCR Automation](https://nccr-automation.ch/index.php/research/sustainability-automation), [Siemens Digital Industries](https://www.siemens.com/global/en/company/about/businesses/digital-industries.html).
 
 <img src="/images/rob_winding.png" alt="robotic winding sim"/>
 
@@ -40,6 +40,8 @@ products and tasks. For this, we are exploring several platforms, from available
 </video>
 
 <img src="/images/winding1.png" alt="robotic winding on real robot" width="40%"/>
+
+
 
 
 ---
