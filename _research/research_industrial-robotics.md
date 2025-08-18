@@ -20,6 +20,10 @@ Industrial robotics research focuses on the development, control, and safe deplo
 - Collaborative robots (cobots) for flexible manufacturing
 - Robotic 3D printing toolkit
 
+### Use Case: Robotic Winding for Additive Manufacturing
+[Industrial Use Case &rarr;](/research/industrial-robotics/use-case/)
+
+
 ### Funding
 - SNF-Innosuisse Bridge Discovery
 - Rieter Stiftungsprofessur

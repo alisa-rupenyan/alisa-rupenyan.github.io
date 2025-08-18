@@ -21,7 +21,7 @@ We develop methods for optimization and control when the systems are subject to 
 - High-dimensional Optimization with Digital Twins
 
 ### Funding
-- SNF NCCR Automation
+- SNF - NCCR Automation
 
 
 ### Publications
