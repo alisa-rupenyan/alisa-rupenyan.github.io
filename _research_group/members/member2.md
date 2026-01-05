@@ -4,7 +4,7 @@ excerpt: "Dr."
 collection: research_group
 role: "Senior scientist"
 order: 2
-image: 
+image: "/images/profile_deepak.png" 
 interests:
   - "Autonomous systems"
   - "Bayesian optimization"
@@ -15,4 +15,4 @@ education:
     year: 2009
 ---
 
-Profile content here
+[Profile info](https://www.zhaw.ch/en/about-us/person/inge)

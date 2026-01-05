@@ -4,7 +4,8 @@ excerpt: ""
 collection: research_group
 role: "research assistant"
 order: 6
-image: 
+image: /images/profile_melvin.png
+interests:
 interests:
   - "Autonomous systems"
   - "Bayesian optimization"
@@ -15,4 +16,4 @@ education:
     year: 2024
 ---
 
-Profile content here.
+[Profile info](https://www.zhaw.ch/en/about-us/person/pari)

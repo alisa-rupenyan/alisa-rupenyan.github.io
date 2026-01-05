@@ -4,7 +4,7 @@ excerpt: ""
 collection: research_group
 role: "PhD student"
 order: 4
-image: 
+image: "/images/profile_diego.png" 
 interests:
   - "Autonomous systems"
   - "Neuro-symbolic learning"
@@ -14,4 +14,4 @@ education:
     year: 2009
 ---
 
-Profile content here.
+[Profile info](https://www.zhaw.ch/en/about-us/person/boie)

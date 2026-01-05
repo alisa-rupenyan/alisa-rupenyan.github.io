@@ -4,7 +4,7 @@ excerpt: ""
 collection: research_group
 role: "PhD student"
 order: 5
-image: 
+image: "/images/profile_yu_tang.png" 
 interests:
   - "Autonomous systems"
   - "Bayesian optimization"
@@ -15,4 +15,4 @@ education:
     year: 2009
 ---
 
-Profile content here.
+[Profile info](https://www.zhaw.ch/en/about-us/person/tanu)
