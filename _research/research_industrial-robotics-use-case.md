@@ -31,6 +31,9 @@ products and tasks. For this, we are exploring several platforms, from available
 
 Project partners: [ZHAW IMPE](https://www.zhaw.ch/en/engineering/institutes-centres/impe), [NCCR Automation](https://nccr-automation.ch/index.php/research/sustainability-automation), [Siemens Digital Industries](https://www.siemens.com/global/en/company/about/businesses/digital-industries.html).
 
+- Publication: Iterative Tuning of Nonlinear Model Predictive Control for Robotic Manufacturing Tasks,
+Deepak Ingole, Valentin Bhend, Shiva Ganesh Murali, Oliver Doebrich, Alisa Rupenyan (under review) https://arxiv.org/abs/2512.13170
+
 <img src="/images/rob_winding.png" alt="robotic winding sim"/>
 
 

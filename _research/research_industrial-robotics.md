@@ -32,3 +32,13 @@ Industrial robotics research focuses on the development, control, and safe deplo
 ### Publications
 - Iterative learning control with mismatch compensation for residual vibration suppression in delta robots: M. Wu et al.
 M Wu, A Rupenyan, B Corves, Nonlinear Dynamics, 1-21
+
+- Iterative Tuning of Nonlinear Model Predictive Control for Robotic Manufacturing Tasks
+Deepak Ingole, Valentin Bhend, Shiva Ganesh Murali, Oliver Dobrich, Alisa Rupenyan
+(under review) https://arxiv.org/abs/2512.13170
+
+
+- Differentiable Material Point Method for the Control of Deformable Objects
+Diego Bolliger, Gabriele Fadini, Markus Bambach, Alisa Rupenyan
+(under review) https://arxiv.org/abs/2512.13214
+
