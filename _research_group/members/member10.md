@@ -1,17 +1,17 @@
 ---
-title: "Yufan Lin"
+title: "Shiva Ganesh Murali"
 excerpt: ""
 collection: research_group
-role: "Research engineer"
-order: 8
-image: /images/profile_yufan.png
+role: "Research assistant"
+order: 10
+image: 
 interests:
-  - "Additive manufacturing"
-  - "Control for robotic additive manufacturing"
+  - "Robotics"
+  - "Motion planning"
 education:
   - title: "MSc"
-    institution: ""
+    institution: "ZHAW"
     year: 
 ---
 
-[Profile info](https://www.zhaw.ch/en/about-us/person/liny)
+[Profile info]()

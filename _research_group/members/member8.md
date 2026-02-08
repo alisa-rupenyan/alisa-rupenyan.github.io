@@ -10,7 +10,7 @@ interests:
   - "Control for robotic additive manufacturing"
 education:
   - title: "MSc"
-    institution: ""
+    institution: "ETH Zürich"
     year: 
 ---
 

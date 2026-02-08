@@ -1,17 +1,17 @@
 ---
-title: "Yufan Lin"
+title: "Valentin Bhend"
 excerpt: ""
 collection: research_group
-role: "Research engineer"
+role: "Research assistant"
 order: 8
-image: /images/profile_yufan.png
+image: 
 interests:
-  - "Additive manufacturing"
-  - "Control for robotic additive manufacturing"
+  - "Robotic winding"
+  - "Modeling of HVAC systems"
 education:
   - title: "MSc"
-    institution: ""
+    institution: "ZHAW"
     year: 
 ---
 
-[Profile info](https://www.zhaw.ch/en/about-us/person/liny)
+[Profile info]()
