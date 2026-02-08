@@ -4,7 +4,7 @@ collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2024-automn-teaching-1
 venue: "ZHAW, Computer Science"
-date: 2014-01-01
+date: 2024-01-01
 location: "Zurich, Switzerland"
 ---
 
