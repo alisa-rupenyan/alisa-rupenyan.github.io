@@ -3,7 +3,7 @@ title: "Valentin Bhend"
 excerpt: ""
 collection: research_group
 role: "Research assistant"
-order: 8
+order: 9
 image: 
 interests:
   - "Robotic winding"
