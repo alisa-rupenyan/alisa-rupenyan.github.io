@@ -37,6 +37,26 @@ author_profile: false
           margin-right: auto;
       }
 
+      .pdf-link {
+          text-align: center;
+          margin-bottom: 30px;
+      }
+
+      .pdf-link a {
+          display: inline-block;
+          background-color: #d32f2f;
+          color: white;
+          padding: 12px 30px;
+          text-decoration: none;
+          border-radius: 5px;
+          font-weight: bold;
+          transition: background-color 0.3s ease;
+      }
+
+      .pdf-link a:hover {
+          background-color: #b71c1c;
+      }
+
       .research-grid {
           display: grid;
           grid-template-columns: repeat(3, 1fr);
@@ -108,10 +128,14 @@ author_profile: false
       
       
       <div class="research-description">
-        Manufacturing systems can achieve higher efficiency and flexibility through increased autonomy, but this requires solutions that work safely under uncertainty while maintaining precision. 
-        Traditional control systems assume perfect models and predictable conditions. Real industrial environments have unknown disturbances, changing parameters, and safety constraints where failures can be catastrophic. 
-        Our research addresses these challenges through the combination of physics-informed artificial intelligence, domain knowledge, optimization and contol methods for improving various aspects of manufacturing and industrial processes in general, with the aim to
+        Manufacturing systems can achieve higher efficiency and flexibility through increased autonomy, but this requires solutions that work safely under uncertainty while maintaining precision.[...]
+        Traditional control systems assume perfect models and predictable conditions. Real industrial environments have unknown disturbances, changing parameters, and safety constraints where fai[...]
+        Our research addresses these challenges through the combination of physics-informed artificial intelligence, domain knowledge, optimization and contol methods for improving various aspect[...]
         enable flexible automation.
+      </div>
+
+      <div class="pdf-link">
+        <a href="/files/AR_research.pdf" download>Download Research Overview (PDF)</a>
       </div>
       
       <div class="research-grid">
@@ -148,5 +172,4 @@ author_profile: false
 </body>
 
 {% include base_path %}
-
 
