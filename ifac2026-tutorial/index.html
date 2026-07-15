@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>From Research to Practice: Entrepreneurship in Control</title>
+<style>
+  :root{
+    --ink:#202124;
+    --sub:#5f6368;
+    --accent:#1a73e8;
+    --accent-dark:#174ea6;
+    --line:#e0e0e0;
+    --bg-soft:#f7f9fc;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:"Google Sans",Arial,Helvetica,sans-serif;
+    color:var(--ink);
+    line-height:1.6;
+    background:#fff;
+  }
+  a{color:var(--accent); text-decoration:none;}
+  a:hover{text-decoration:underline;}
+  .wrap{max-width:900px; margin:0 auto; padding:0 24px;}
+
+  .logo-bar{
+    background:#fff;
+    border-bottom:1px solid var(--line);
+    padding:16px 0;
+  }
+  .logo-bar .wrap{
+    display:flex;
+    align-items:center;
+    gap:32px;
+    flex-wrap:wrap;
+  }
+  .logo-bar img{
+    height:44px;
+    width:auto;
+    object-fit:contain;
+  }
+
+  header.hero{
+    position:relative;
+    background:linear-gradient(135deg,rgba(11,61,145,.45),rgba(26,115,232,.4)),
+      url('https://www.ifac2026.org/home/2024/ifac/image/visual_02.jpg') center/cover no-repeat;
+    color:#fff;
+    padding:64px 0 48px;
+    text-shadow:0 1px 6px rgba(0,0,0,.55);
+  }
+  header.hero .eyebrow{
+    font-size:14px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    opacity:.85;
+    margin-bottom:10px;
+  }
+  header.hero h1{
+    font-size:38px;
+    line-height:1.2;
+    margin:0 0 18px;
+    font-weight:600;
+  }
+  header.hero .meta{
+    display:flex;
+    flex-wrap:wrap;
+    gap:24px;
+    font-size:16px;
+    margin-bottom:14px;
+  }
+  header.hero .meta span strong{
+    display:block;
+    font-size:12px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    opacity:.75;
+    font-weight:500;
+  }
+  header.hero .org{
+    font-size:14px;
+    opacity:.9;
+    max-width:640px;
+  }
+
+  nav.toc{
+    background:var(--bg-soft);
+    border-bottom:1px solid var(--line);
+    position:sticky;
+    top:0;
+    z-index:10;
+  }
+  nav.toc .wrap{
+    display:flex;
+    gap:20px;
+    overflow-x:auto;
+    padding-top:12px;
+    padding-bottom:12px;
+    font-size:14px;
+  }
+  nav.toc a{color:var(--sub); white-space:nowrap;}
+  nav.toc a:hover{color:var(--accent);}
+
+  section{padding:48px 0;}
+  section + section{border-top:1px solid var(--line);}
+  h2{
+    font-size:26px;
+    font-weight:600;
+    margin:0 0 20px;
+    color:var(--ink);
+  }
+  h3{
+    font-size:18px;
+    font-weight:600;
+    margin:0 0 4px;
+  }
+  p{margin:0 0 16px; color:#3c4043;}
+
+  .abstract p{font-size:16px;}
+
+  ul.topics{padding-left:20px; margin:0;}
+  ul.topics li{margin-bottom:10px; color:#3c4043;}
+
+  .schedule-block{margin-bottom:28px;}
+  .schedule-block h4{
+    font-size:13px;
+    text-transform:uppercase;
+    letter-spacing:.06em;
+    color:var(--sub);
+    margin:0 0 12px;
+  }
+  table.sched{width:100%; border-collapse:collapse; font-size:15px;}
+  table.sched td{padding:10px 8px; border-bottom:1px solid var(--line); vertical-align:top;}
+  table.sched td.time{width:130px; color:var(--sub); white-space:nowrap;}
+
+  .speaker{
+    padding:24px 0;
+    border-bottom:1px solid var(--line);
+  }
+  .speaker:last-child{border-bottom:none;}
+  .speaker .name{font-size:19px; font-weight:600; margin-bottom:2px;}
+  .speaker .affil{font-size:14px; color:var(--sub); margin-bottom:10px;}
+  .speaker .talk-title{font-size:15px; font-weight:600; color:var(--accent-dark); margin-bottom:6px;}
+  .speaker .bio{font-size:14px; color:#3c4043;}
+  .speaker .keywords{font-size:12px; color:var(--sub); margin-top:8px; font-style:italic;}
+
+  .tools-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:32px;
+  }
+  .tool-card h3{margin-bottom:8px;}
+  .tool-card .tool-link{font-size:14px; display:inline-block; margin-bottom:12px;}
+  .video-embed{
+    position:relative;
+    display:block;
+    padding-bottom:56.25%;
+    height:0;
+    overflow:hidden;
+    border-radius:8px;
+    border:1px solid var(--line);
+    background:#000 center/cover no-repeat;
+  }
+  .video-embed .play-btn{
+    position:absolute;
+    top:50%; left:50%;
+    transform:translate(-50%,-50%);
+    width:68px; height:48px;
+    background:rgba(0,0,0,.75);
+    border-radius:12px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+  }
+  .video-embed .play-btn::after{
+    content:"";
+    border-style:solid;
+    border-width:11px 0 11px 19px;
+    border-color:transparent transparent transparent #fff;
+    margin-left:4px;
+  }
+  .video-embed:hover .play-btn{background:#ff0000;}
+
+  .venue-box{
+    background:var(--bg-soft);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:24px;
+  }
+  .venue-box h3{margin-bottom:4px;}
+  .venue-box .addr{color:var(--sub); font-size:15px; margin-bottom:12px;}
+  .venue-photo{
+    width:100%;
+    border-radius:10px;
+    display:block;
+    margin-bottom:20px;
+    border:1px solid var(--line);
+  }
+  .venue-photo-caption{
+    font-size:12px;
+    color:var(--sub);
+    text-align:right;
+    margin-top:-14px;
+    margin-bottom:20px;
+  }
+  .note{
+    font-size:14px;
+    color:var(--sub);
+    background:#eef4ff;
+    border-left:3px solid var(--accent);
+    padding:12px 16px;
+    border-radius:4px;
+  }
+
+  .prev-events li{margin-bottom:6px; color:#3c4043; font-size:14px;}
+
+  footer{
+    padding:32px 0 48px;
+    font-size:13px;
+    color:var(--sub);
+    text-align:center;
+  }
+</style>
+</head>
+<body>
+
+<div class="logo-bar">
+  <div class="wrap">
+    <img src="https://www.ifac-control.org/++theme++ifac.theme/images/logo.png" alt="IFAC — International Federation of Automatic Control">
+    <img src="https://www.ifac2026.org/home/2024/ifac/image/IFAC_2026_Logo_png.png" alt="IFAC 2026 Busan">
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Wednesday, 26 August 2026 · 13:10&ndash;15:10 · Room 101</div>
+    <h1>From Research to Practice: Entrepreneurship in Control</h1>
+    <div class="meta">
+      <span><strong>Date</strong>26 August 2026</span>
+      <span><strong>Time</strong>13:10&ndash;15:10</span>
+      <span><strong>Room</strong>101</span>
+      <span><strong>Venue</strong>BEXCO, Busan, Republic of Korea</span>
+    </div>
+    <div class="org">
+      A tutorial session at the 23rd IFAC World Congress 2026, organized by the Task Force on
+      &ldquo;Startups and Entrepreneurship&rdquo; of IFAC&rsquo;s Industry Committee, supported by
+      NCCR Automation.
+    </div>
+  </div>
+</header>
+
+<nav class="toc">
+  <div class="wrap">
+    <a href="#abstract">Abstract</a>
+    <a href="#topics">Topics</a>
+    <a href="#schedule">Schedule</a>
+    <a href="#speakers">Speakers</a>
+    <a href="#audience">Audience</a>
+    <a href="#tools">Tools</a>
+    <a href="#venue">Venue</a>
+    <a href="#organizers">Organizers</a>
+  </div>
+</nav>
+
+<section id="abstract">
+  <div class="wrap abstract">
+    <h2>Abstract</h2>
+    <p>The transition from research to entrepreneurship in control and automation requires technical
+    excellence, and also entrepreneurial mindset, strategic thinking, and understanding of
+    commercialization. This tutorial aims to enhance entrepreneurial thinking by presenting authentic
+    testimonials and career path stories from multiple perspectives within the control community. The
+    session will feature several recently established entrepreneurs who have successfully launched
+    startups based on control research, sharing their journeys from academic insights to commercial
+    ventures. Complementing these perspectives, we will see how to integrate entrepreneurial thinking
+    into research programs, and navigate the boundary between academic excellence and commercial
+    relevance. Finally, the session will provide insights into what industry seeks in research-based
+    innovations and how young researchers can position themselves for impact.</p>
+    <p>Through these diverse narratives, attendees will gain practical understanding of different
+    pathways from research to entrepreneurship, strategies for identifying commercial opportunities in
+    control research, and approaches to building networks that bridge academia, industry, and
+    entrepreneurship. Interactive discussion segments will allow participants to engage directly with
+    speakers, explore specific challenges, and develop their own entrepreneurial perspectives.</p>
+    <p>This tutorial is designed primarily for early-career researchers in control and automation who
+    are exploring career options and seeking to develop entrepreneurial thinking &mdash; regardless of
+    whether they pursue startup ventures, industrial careers, or academic paths with entrepreneurial
+    elements.</p>
+  </div>
+</section>
+
+<section id="topics">
+  <div class="wrap">
+    <h2>What We&rsquo;ll Cover</h2>
+    <ul class="topics">
+      <li>Different entrepreneurial paths: control as a service, startup ventures, applied research</li>
+      <li>Entrepreneurial career progression</li>
+      <li>Barriers in commercializing research results</li>
+      <li>Framing research projects that benefit both industry and academia</li>
+      <li>Making control/automation solutions affordable, accessible, and relevant for society</li>
+      <li>Funding strategies, intellectual property, and risk</li>
+    </ul>
+  </div>
+</section>
+
+<section id="schedule">
+  <div class="wrap">
+    <h2>Schedule</h2>
+
+    <div class="schedule-block">
+      <h4>Part 1 &middot; Global perspectives on entrepreneurship in control</h4>
+      <table class="sched">
+        <tr><td class="time">Talk 1</td><td><strong>Alisa Rupenyan</strong> &mdash; How to pitch your idea: beyond the science (good practices to acquire funding for your startup)</td></tr>
+        <tr><td class="time">Talk 2</td><td><strong>Laurens Jakobs</strong> &mdash; When control loops leave the lab: reflections from two years into a control engineering service provider</td></tr>
+        <tr><td class="time">Talk 3</td><td><strong>Alejandro Astudillo</strong> &mdash; From paper to product: lessons learned scaling physical intelligence from TRL 1 to TRL 9</td></tr>
+        <tr><td class="time">Talk 4</td><td><strong>Sehoon Oh</strong> &mdash; The control engineering challenge for humanoid profitability: lessons from industrial robotics</td></tr>
+        <tr><td class="time">Talk 5</td><td><strong>Takenori Atsumi</strong> &mdash; Connecting control theory to practice: implementable robust control and a benchmark problem for HDD head-positioning servo control</td></tr>
+        <tr><td class="time">Talk 6</td><td><strong>Efe Balta</strong> &mdash; Robotic 3D printing toolkit: from research toward a product</td></tr>
+      </table>
+    </div>
+
+    <div class="schedule-block">
+      <h4>Part 2 &middot; Interactive session</h4>
+      <table class="sched">
+        <tr><td class="time">20 min</td><td>Breakout groups &mdash; attendees split into groups to discuss commercialization ideas based on their own research and prepare a short pitch using a dedicated tool, presented in 3 minutes per group.</td></tr>
+        <tr><td class="time">20 min</td><td>Q&amp;A &mdash; collecting relevant questions and gauging interest for mentorship in the community, feeding directly into the work of the IFAC Industry Committee&rsquo;s Task Force on Entrepreneurship and Startups.</td></tr>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section id="speakers">
+  <div class="wrap">
+    <h2>Speakers</h2>
+
+    <div class="speaker">
+      <div class="name">Alisa Rupenyan</div>
+      <div class="affil">ZHAW Center for AI, Zurich University of Applied Sciences, Switzerland</div>
+      <div class="talk-title">How to pitch your idea &mdash; beyond the science</div>
+      <p class="bio">Alisa Rupenyan is a Professor of Industrial AI at the Zurich University of Applied
+      Sciences. She spent several years at universities in the Netherlands and Switzerland for her
+      doctoral and postdoctoral research in ultrafast laser physics and spectroscopy, was later lead
+      scientist at a robotics start-up developing ML-based sorting and sensing technology, and between
+      2018&ndash;2023 was a group leader in automation at inspire AG and senior scientist/PI at the
+      Automatic Control Laboratory, ETH Zurich. Her research sits at the intersection of machine
+      learning, control, and optimization for industrial applications and robotics. She is an innovation
+      expert for Innosuisse and the European Commission, and chairs the IFAC Industry Committee&rsquo;s
+      Task Force on Entrepreneurship and Startups.</p>
+      <div class="keywords">Keywords: manufacturing applications, control, startup funding</div>
+    </div>
+
+    <div class="speaker">
+      <div class="name">Laurens Jakobs</div>
+      <div class="affil">Nikwist, Leuven, Belgium</div>
+      <div class="talk-title">When control loops leave the lab</div>
+      <p class="bio">Laurens Jakobs is a control engineer and co-founder at Nikwist, a Leuven-based
+      engineering service provider specialized in motion control systems and mechatronics. He obtained
+      his PhD in Mechanical Engineering from KU Leuven in 2021 and subsequently worked as an industrial
+      postdoctoral fellow in high-tech industry. In 2024 he co-founded Nikwist, where he teams up with
+      R&amp;D and engineering teams from SMEs and multinationals across various industries as a
+      consultant.</p>
+      <div class="keywords">Keywords: industrial applications, control services, control engineering</div>
+    </div>
+
+    <div class="speaker">
+      <div class="name">Alejandro Astudillo</div>
+      <div class="affil">T-ROBOTICS (now TRENER), USA</div>
+      <div class="talk-title">From paper to product: scaling physical intelligence from TRL 1 to TRL 9</div>
+      <p class="bio">Alejandro Astudillo leads Product Research and Innovation at T-ROBOTICS (now
+      TRENER), a startup bringing physical intelligence to industrial robotics. Originally from Colombia,
+      he obtained his PhD from KU Leuven in early 2023, where he stayed as a postdoctoral researcher
+      working on efficient algorithms and software tools for motion planning and control in robotics. In
+      early 2024 he joined the founding team of T-ROBOTICS as Chief Product Officer during the pre-seed
+      and seed stages, leading the effort to translate academic research into deployed robotic solutions.</p>
+      <div class="keywords">Keywords: robotics, startup, automation, control, fundraising</div>
+    </div>
+
+    <div class="speaker">
+      <div class="name">Sehoon Oh</div>
+      <div class="affil">Daegu Gyeongbuk Institute of Science and Technology (DGIST), South Korea</div>
+      <div class="talk-title">The control engineering challenge for humanoid profitability</div>
+      <p class="bio">Sehoon Oh is a Full Professor in the Department of Robotics and Mechatronics
+      Engineering at DGIST, South Korea. He specializes in robotics, control theory, and mechatronics,
+      and serves as a committee member for IEEE/ASME Transactions on Mechatronics. He earned his PhD
+      from the University of Tokyo.</p>
+      <div class="keywords">Keywords: robotics, control, humanoids, industrial robotics</div>
+    </div>
+
+    <div class="speaker">
+      <div class="name">Takenori Atsumi</div>
+      <div class="affil">Chiba Institute of Technology, Japan</div>
+      <div class="talk-title">Connecting control theory to practice: a benchmark for HDD servo control</div>
+      <p class="bio">Takenori Atsumi is a Professor of Mechanical Engineering, Faculty of Engineering, at
+      the Chiba Institute of Technology (CIT), Japan. Before joining CIT in 2015, he spent over 15 years
+      in industry at Hitachi, Ltd. and HGST Japan, developing control technologies for storage systems.</p>
+    </div>
+
+    <div class="speaker">
+      <div class="name">Efe Balta</div>
+      <div class="affil">inspire AG &amp; Automatic Control Laboratory (IfA), ETH Zurich, Switzerland</div>
+      <div class="talk-title">Robotic 3D printing toolkit: from research toward a product</div>
+      <p class="bio">Efe C. Balta received his B.S. in manufacturing engineering from Istanbul Technical
+      University (2016) and his M.S. and Ph.D. in mechanical engineering from the University of
+      Michigan, Ann Arbor (2018, 2021). He was a postdoctoral researcher at the Automatic Control
+      Laboratory (IfA), ETH Zurich, from 2021&ndash;2023. Since September 2023 he has led the Control and
+      Automation Research Group at inspire AG and remains a guest senior scientist at IfA. His research
+      interests include control theory, optimization, statistical learning, robotics, cyber-physical
+      systems, and additive manufacturing.</p>
+      <div class="keywords">Keywords: additive manufacturing, control, data-driven control, robotics</div>
+    </div>
+
+  </div>
+</section>
+
+<section id="audience">
+  <div class="wrap">
+    <h2>Who Should Attend</h2>
+    <p>The tutorial is relevant to students, faculty, and professionals interested in commercializing
+    their research. Students may be interested in learning about the risks and challenges of
+    entrepreneurship, strategies to mitigate them, and ways to attract funding for a startup idea.
+    Faculty &mdash; particularly those with some entrepreneurial experience who can also serve as
+    mentors &mdash; can offer their perspective and benefit from the discussion. Industry researchers
+    can share their perspectives on control solutions and control-based technology as a product. The
+    session is also an opportunity for networking across these different groups.</p>
+  </div>
+</section>
+
+<section id="tools">
+  <div class="wrap">
+    <h2>The Tools</h2>
+    <div class="tools-grid">
+
+      <div class="tool-card">
+        <h3>Entrepreneurship Tools &mdash; Intro</h3>
+        <a class="video-embed" href="https://www.youtube.com/watch?v=Tg6QWRAHzZk" target="_blank" rel="noopener" style="background-image:url('https://img.youtube.com/vi/Tg6QWRAHzZk/hqdefault.jpg')">
+          <span class="play-btn"></span>
+        </a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Problem Scoping Canvas</h3>
+        <a class="tool-link" href="https://www.boardofinnovation.com/tools/scoping-canvas/" target="_blank" rel="noopener">boardofinnovation.com/tools/scoping-canvas</a>
+        <a class="video-embed" href="https://www.youtube.com/watch?v=N4ZUMr70-0w" target="_blank" rel="noopener" style="background-image:url('https://img.youtube.com/vi/N4ZUMr70-0w/hqdefault.jpg')">
+          <span class="play-btn"></span>
+        </a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Market Opportunity Navigator</h3>
+        <a class="tool-link" href="https://wheretoplay.co/" target="_blank" rel="noopener">wheretoplay.co</a>
+        <a class="video-embed" href="https://www.youtube.com/watch?v=JmG3fdptY_k" target="_blank" rel="noopener" style="background-image:url('https://img.youtube.com/vi/JmG3fdptY_k/hqdefault.jpg')">
+          <span class="play-btn"></span>
+        </a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Serious Game: Technology Coach</h3>
+        <a class="tool-link" href="https://www.neworks.biz/technology-coach.html" target="_blank" rel="noopener">neworks.biz/technology-coach</a>
+        <a class="video-embed" href="https://www.youtube.com/watch?v=2FumwkBMhLo" target="_blank" rel="noopener" style="background-image:url('https://img.youtube.com/vi/2FumwkBMhLo/hqdefault.jpg')">
+          <span class="play-btn"></span>
+        </a>
+      </div>
+
+      <div class="tool-card">
+        <h3>Business Model Canvas</h3>
+        <a class="tool-link" href="https://www.strategyzer.com/" target="_blank" rel="noopener">strategyzer.com</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="venue">
+  <div class="wrap">
+    <h2>Venue</h2>
+    <img class="venue-photo" src="https://www.ifac2026.org/home/2024/ifac/image/visual_02.jpg" alt="Busan skyline at night">
+    <div class="venue-photo-caption">&copy;Busan Metropolitan City</div>
+    <div class="venue-box">
+      <h3>BEXCO &mdash; Busan Exhibition &amp; Convention Center</h3>
+      <div class="addr">Room 101 &middot; Busan, Republic of Korea &middot; 23rd IFAC World Congress 2026 (23&ndash;28 August 2026)</div>
+      <div class="note">No registration other than for IFAC World Congress 2026 is required to join the session.</div>
+    </div>
+  </div>
+</section>
+
+<section id="organizers">
+  <div class="wrap">
+    <h2>Organizers</h2>
+    <p>This tutorial is organized by the Task Force on &ldquo;Startups and Entrepreneurship&rdquo; of
+    IFAC&rsquo;s Industry Committee, chaired by Alisa Rupenyan, and supported by NCCR Automation
+    (Switzerland&rsquo;s National Centre of Competence in Research for Control and Automation).</p>
+    <p>The organizers have run related sessions before:</p>
+    <ul class="prev-events">
+      <li>Entrepreneurship Forum, IFAC World Congress 2023</li>
+      <li>Workshop &ldquo;Taking Control Research to Practice,&rdquo; IEEE CCTA 2023</li>
+      <li>Tutorial session, ECC 2024 &mdash; Automatic Control Horizon, Roadmap and Industrial Innovation</li>
+      <li>Workshop, IEEE CASE 2024 &mdash; Bridging Control and Automation Research with Manufacturing Applications</li>
+      <li>Tutorial session, ECC 2025 &mdash; From Research to Reality in Control</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    From Research to Practice: Entrepreneurship in Control &middot; IFAC World Congress 2026, Busan &middot; Contact: alisa.rupenyan@zhaw.ch
+  </div>
+</footer>
+
+</body>
+</html>
